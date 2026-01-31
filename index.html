@@ -6,6 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 	<title>Will you be my Valentine?</title>
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+
 	<!-- Confetti library -->
 	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 	<link rel="stylesheet" href="style.css">
@@ -13,6 +17,12 @@
 
 <body>
 	<canvas id="confettiCanvas"></canvas>
+	<div id="overlay">
+		<div>
+			<p id="countdown-text">Are you ready?</p>
+			<p id="countdown">10</p>
+		</div>
+	</div>
 
 	<main class="card">
 		<div id="request-sect">
