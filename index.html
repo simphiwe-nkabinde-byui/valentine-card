@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+	<title>Will you be my Valentine?</title>
+
+	<!-- Confetti library -->
+	<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<canvas id="confettiCanvas"></canvas>
+
+	<main class="card">
+		<div id="request-sect">
+			<img class="rounded-circle" width="150" src="https://i.giphy.com/EWCq44B4r4FwjesXPw.webp" alt="">
+			<h1>Ntombizodwa will you be my valentine?</h1>
+			<img src="dashchund.jpeg" class="rounded-circle" width="100" alt="">
+		</div>
+
+		<section class="button-zone" id="zone">
+			<button id="yesBtn">Yes</button>
+			<button id="noBtn">No</button>
+		</section>
+
+		<!-- HINT (ONLY FIRST SECTION) -->
+		<div class="hint" id="hint">
+			"Thou mayest choose for thyself, for it is given unto thee"😇
+		</div>
+
+		<section class="result" id="result">
+			<h2>YAY! 🎉</h2>
+			<p>That's right😎😍</p>
+			<img class="fireworks" width="250" src="https://i.giphy.com/PK1YUO3v8ywzYHqFWn.webp" alt="Fireworks" />
+		</section>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
