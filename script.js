@@ -4,6 +4,25 @@ const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
 const result = document.getElementById("result");
 const hint = document.getElementById("hint");
+const countdown = document.getElementById("countdown");
+const overlay = document.getElementById("overlay");
+
+// count down
+count = 10;
+const counterInterval = setInterval(() => {
+  if (count <= 0) {
+    endCountdown();
+    overlay.style.display = "none";
+  }
+  countdown.innerText = count--;
+  if (count <= 5) {
+    overlay.style.opacity = count / 2;
+  }
+}, 1000);
+
+function endCountdown() {
+  clearInterval(counterInterval);
+}
 
 /* ---------- CONFETTI (FIXED FULL SCREEN) ---------- */
 const confettiCanvas = document.getElementById("confettiCanvas");
